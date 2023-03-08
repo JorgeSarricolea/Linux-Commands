@@ -32,8 +32,8 @@
 | less <path> | an even more advanced way of reading a file, allows you to scroll through it with the arrow keys. Press Q to quit |  |
 | pwd | show current path | coque@sarricolea:~/Docs$ pwd   /home/coquesv/Docs |
 | du | Shows disk usage. In general, files are stored in blocks of 4KB/4096bytes. If a file is smaller it will still take up 4K of disk space. du indicates the actual occupancy. | /var/log@Host1 # du -sch *
-20K      acpid
-0        apache2
+<br>20K      acpid</br>
+<br>0        apache2</br>
 0        auth.log
 324K     cron
 2,1M     cups
