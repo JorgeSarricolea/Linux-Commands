@@ -32,8 +32,9 @@
 | less <path> | an even more advanced way of reading a file, allows you to scroll through it with the arrow keys. Press Q to quit |  |
 | pwd | show current path | coque@sarricolea:~/Docs$ pwd   /home/coquesv/Docs |
 | du | Shows disk usage. In general, files are stored in blocks of 4KB/4096bytes. If a file is smaller it will still take up 4K of disk space. du indicates the actual occupancy. | /var/log@Host1 # du -sch * |
-| df pydf | df disk free, shows the free space left on the disk. pydf (pydf == python disk free) performs the same task but sorting in columns and with colors. df is useful for automated scripts while pydf is better for manually viewing consumption. | Look for symbolic links inside /etc:
+| find | Command to search for files. It has dozens of options that make it extremely powerful. | Look for symbolic links inside /etc:
 find /etc -type l     Search for files modified 10 days or less ago: find /etc -type f -mtime -10     Look for files modified exactly 10 days ago: find /etc -type f -mtime 10 |
+| df pydf | df disk free, shows the free space left on the disk. pydf (pydf == python disk free) performs the same task but sorting in columns and with colors. df is useful for automated scripts while pydf is better for manually viewing consumption. |  |
 
 
 
