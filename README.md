@@ -31,40 +31,9 @@
 | more <path> | a more advanced way of reading a file, pauses at each line. It can be read by pressing enter repeatedly (or space to skip screens) |  |
 | less <path> | an even more advanced way of reading a file, allows you to scroll through it with the arrow keys. Press Q to quit |  |
 | pwd | show current path | coque@sarricolea:~/Docs$ pwd   /home/coquesv/Docs |
-| du | Shows disk usage. In general, files are stored in blocks of 4KB/4096bytes. If a file is smaller it will still take up 4K of disk space. du indicates the actual occupancy. | /var/log@Host1 # du -sch *
-<br>20K      acpid</br>
-<br>0        apache2</br>
-0        auth.log
-324K     cron
-2,1M     cups
-108K     daemons
-4,0K     incrementalBackup.sh.root.20100101.log
-4,0K     incrementalBackup.sh.root.20100102.log
-4,0K     incrementalBackup.sh.root.20100103.log
-56K      mail
-0        maillog
-128K     messages
-1,2M     messages.1.gz
-3,7M     messages.2.gz
-2,5M     msec.log
-35M      mysqld
-...
-111M    total |
-| df pydf | df disk free, shows the free space left on the disk. pydf (pydf == python disk free) performs the same task but sorting in columns and with colors. df is useful for automated scripts while pydf is better for manually viewing consumption. |  |
-| find | Command to search for files. It has dozens of options that make it extremely powerful. | Look for symbolic links inside /etc:
-find /etc -type l
-Search for files modified 10 days or less ago:
-
-find /etc -type f -mtime -10
-Look for files modified exactly 10 days ago:
-
-find /etc -type f -mtime 10
-Looks for files modified 5 or more days ago within /etc with name extension sh or php and on each match executes a new script passing the name of the found file as a parameter. ('{}' is replaced by the name of the found file.) .
-
-find /etc -type f -name "*sh" -or -name "*.php" -mtime +5 -exec script1.sh {} \;
-For the latter case, we can use an inline script by replacing -exec script1.sh {} with a statement similar to
-
--exec bash -c " echo \"File:{}\" ; grep \"pattern1\" {} ; wc -l {} " |
+| du | Shows disk usage. In general, files are stored in blocks of 4KB/4096bytes. If a file is smaller it will still take up 4K of disk space. du indicates the actual occupancy. | /var/log@Host1 # du -sch * |
+| df pydf | df disk free, shows the free space left on the disk. pydf (pydf == python disk free) performs the same task but sorting in columns and with colors. df is useful for automated scripts while pydf is better for manually viewing consumption. | Look for symbolic links inside /etc:
+find /etc -type l     Search for files modified 10 days or less ago: find /etc -type f -mtime -10     Look for files modified exactly 10 days ago: find /etc -type f -mtime 10 |
 
 
 
