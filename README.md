@@ -7,8 +7,7 @@
 | Sintaxis	 | Explanation |
 |-----------|-----------|
 | info | Self explanatory general information. Overly detailed; Sorts commands by utility. |
-| man <command> | Complete manual (or almost complete) on a command
-There is a manual for the man command itself, accessed by man man |
+| man <command> | Complete manual (or almost complete) on a command. There is a manual for the man command itself, accessed by man man |
 | <command> --help | Basic help on a command (not all offer it) |
 | <command> --usage | Basic syntax on a command (not all offer it) |
 | whatis <command> | Very little information about a command |
