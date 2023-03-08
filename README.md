@@ -19,9 +19,9 @@
 |-----------|-----------|-----------|
 | dir | lists the files (referring to all types of files: directories, files themselves, symbolic links, etc.) |  |
 | ls [-a] [-l] | visualizes the files and folders in colors to distinguish the different types. -a reflects hidden files, which start with a dot in their name; they do not normally appear either on the console or in graphical mode. -l gives extra information about the files instead of just writing the names. |  |
-| touch <path> | change the metadata (date, creation time) or create blank files |  |
-| mkdir <path> | create directories |  |
-| cd <path>	 |  |  |
+| touch <path> | change the metadata (date, creation time) or create blank files | touch -t 03122010 file21.txt touch file21.txt |
+| mkdir <path> | create directories | mkdir ~/This\ is\ not\ private |
+| cd <path>	 |  | coque@sarricolea:~$ cd Documents coque@sarricolea:~/Documents$ |
 | cd ..	 | always change to the directory immediately above it. don't paste dots to the command like in MS-Dos! It won't recognize the command |  |
 | cd - | always change to the previously visited directory |  |
 | rmdir <path>	 | allows you to delete an empty directory |  |
