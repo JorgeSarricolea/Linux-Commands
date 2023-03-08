@@ -13,6 +13,30 @@
 | whatis <command> | Very little information about a command |
 | apropos <command> | Parecido al anterior |
 
+### Folder and file management
+
+| Sintaxis	 | Explanation |
+|-----------|-----------|
+| dir | lists the files (referring to all types of files: directories, files themselves, symbolic links, etc.) |  |
+| ls [-a] [-l] | visualizes the files and folders in colors to distinguish the different types. -a reflects hidden files, which start with a dot in their name; they do not normally appear either on the console or in graphical mode. -l gives extra information about the files instead of just writing the names. |  |
+| touch <branch>	 |  |  |
+| mkdir <branch>	 |  |  |
+| cd <branch>	 |  |  |
+| cd ..	 |  |  |
+| cd - |  |  |
+| rmdir <branch>	 |  |  |
+| cp <origin> <destination> |  |  |
+| mv <origin> <destination> |  |  |
+| rm [-i] [-r] <branch> |  |  |
+| cat <branch> |  |  |
+| more <branch> |  |  |
+| less <branch> |  |  |
+| pwd |  |  |
+| du |  |  |
+| df pydf |  |  |
+| find |  |  |
+
+
 
 
 
