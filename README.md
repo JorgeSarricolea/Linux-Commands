@@ -19,22 +19,22 @@
 |-----------|-----------|-----------|
 | dir | lists the files (referring to all types of files: directories, files themselves, symbolic links, etc.) |  |
 | ls [-a] [-l] | visualizes the files and folders in colors to distinguish the different types. -a reflects hidden files, which start with a dot in their name; they do not normally appear either on the console or in graphical mode. -l gives extra information about the files instead of just writing the names. |  |
-| touch <branch>	 |  |  |
-| mkdir <branch>	 |  |  |
-| cd <branch>	 |  |  |
-| cd ..	 |  |  |
-| cd - |  |  |
-| rmdir <branch>	 |  |  |
-| cp <origin> <destination> |  |  |
-| mv <origin> <destination> |  |  |
-| rm [-i] [-r] <branch> |  |  |
-| cat <branch> |  |  |
-| more <branch> |  |  |
-| less <branch> |  |  |
-| pwd |  |  |
-| du |  |  |
-| df pydf |  |  |
-| find |  |  |
+| touch <path> | change the metadata (date, creation time) or create blank files |  |
+| mkdir <path> | create directories |  |
+| cd <path>	 |  |  |
+| cd ..	 | always change to the directory immediately above it. don't paste dots to the command like in MS-Dos! It won't recognize the command |  |
+| cd - | always change to the previously visited directory |  |
+| rmdir <path>	 | allows you to delete an empty directory |  |
+| cp <source> <destination> | copies the file or directory <source> to <destination> |  |
+| mv <source> <destination> | allows moving and/or renaming the file <source> to <destination> |  |
+| rm [-i] [-r] <branch> | it does not move to the trash, it permanently deletes the files. In principle, it deletes files one by one to delete an entire folder you need to delete the files inside first, either by hand or with the -r option (recursive; deletes everything inside) the -i option makes it ask for confirmation before delete, very convenient if used with the -r option |  |
+| cat <path> | view content of a file; several can be concatenated the visualization is done without pause; if the text is longer than the screen it cannot be retrieved. |  |
+| more <path> | a more advanced way of reading a file, pauses at each line. It can be read by pressing enter repeatedly (or space to skip screens) |  |
+| less <path> | an even more advanced way of reading a file, allows you to scroll through it with the arrow keys. Press Q to quit |  |
+| pwd | show current path |  |
+| du | Shows disk usage. In general, files are stored in blocks of 4KB/4096bytes. If a file is smaller it will still take up 4K of disk space. du indicates the actual occupancy. |  |
+| df pydf | df disk free, shows the free space left on the disk. pydf (pydf == python disk free) performs the same task but sorting in columns and with colors. df is useful for automated scripts while pydf is better for manually viewing consumption. |  |
+| find | Command to search for files. It has dozens of options that make it extremely powerful. |  |
 
 
 
