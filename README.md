@@ -35,7 +35,9 @@
 | find | Command to search for files. It has dozens of options that make it extremely powerful. | Look for symbolic links inside /etc: find /etc -type l     Search for files modified 10 days or less ago: find /etc -type f -mtime -10     Look for files modified exactly 10 days ago: find /etc -type f -mtime 10 |
 | df pydf | df disk free, shows the free space left on the disk. pydf (pydf == python disk free) performs the same task but sorting in columns and with colors. df is useful for automated scripts while pydf is better for manually viewing consumption. |  |
 
+### Backups
 
+### Related to permissions and users
 
 
 
