@@ -4,8 +4,8 @@
 
 ### Help commands
 
-| Sintaxis	 | Explanation | Example |
-|-----------|-----------|-----------|
+| Sintaxis | Explanation |
+|-----------|-----------|
 | info | Self explanatory general information. Overly detailed; Sorts commands by utility. |
 | man <command> | Complete manual (or almost complete) on a command. There is a manual for the man command itself, accessed by man man |
 | <command> --help | Basic help on a command (not all offer it) |
@@ -15,8 +15,8 @@
 
 ### Folder and file management
 
-| Sintaxis	 | Explanation |
-|-----------|-----------|
+| Sintaxis	 | Explanation | Example |
+|-----------|-----------|-----------|
 | dir | lists the files (referring to all types of files: directories, files themselves, symbolic links, etc.) |  |
 | ls [-a] [-l] | visualizes the files and folders in colors to distinguish the different types. -a reflects hidden files, which start with a dot in their name; they do not normally appear either on the console or in graphical mode. -l gives extra information about the files instead of just writing the names. |  |
 | touch <branch>	 |  |  |
