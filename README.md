@@ -4,14 +4,15 @@
 
 ### Help commands
 
-| Sintaxis	 | Examples |
+| Sintaxis	 | Explanation |
 |-----------|-----------|
-| info | Celda 1,2 |
-| man <command> | Celda 2,2 |
-| <command> --help | Celda 2,2 |
-| <command> --usage | Celda 2,2 |
-| whatis <command> | Celda 2,2 |
-| apropos <command> | Celda 2,2 |
+| info | Self explanatory general information. Overly detailed; Sorts commands by utility. |
+| man <command> | Complete manual (or almost complete) on a command
+There is a manual for the man command itself, accessed by man man |
+| <command> --help | Basic help on a command (not all offer it) |
+| <command> --usage | Basic syntax on a command (not all offer it) |
+| whatis <command> | Very little information about a command |
+| apropos <command> | Parecido al anterior |
 
 
 
