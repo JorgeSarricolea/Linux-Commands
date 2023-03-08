@@ -15,7 +15,7 @@
 
 ### Folder and file management
 
-| Sintaxis	 | Explanation | Example |
+| Sintaxis | Explanation | Example |
 |-----------|-----------|-----------|
 | dir | lists the files (referring to all types of files: directories, files themselves, symbolic links, etc.) |  |
 | ls [-a] [-l] | visualizes the files and folders in colors to distinguish the different types. -a reflects hidden files, which start with a dot in their name; they do not normally appear either on the console or in graphical mode. -l gives extra information about the files instead of just writing the names. |  |
@@ -36,7 +36,11 @@
 | df pydf | df disk free, shows the free space left on the disk. pydf (pydf == python disk free) performs the same task but sorting in columns and with colors. df is useful for automated scripts while pydf is better for manually viewing consumption. |  |
 
 ### Backups
-
+  
+| Sintaxis | Explanation | Example |
+|-----------|-----------|-----------|
+| rsync | It allows you to synchronize folders locally or on a remote system accessible via a network, perform incremental backups and snapshots (similar to MacOSX's "Time Machine" system) of a folder or directory. rsync checks before copying a file that it doesn't already exist on the destination, it checks if there were changes and if there were, it copies only the part of the file that changed. This verification can greatly multiply the speed of synchronization (up to 10 times in local copies and up to 1000 in copies through WAN networks -ADSL for example-). | Hard links allow access to a file from several alternative paths, in this case from .../mysql.201001/path1 and .../mysql.201008/path2. When we delete the file from a path with rm, the file is still accessible from the rest of the paths or hard links. When the last hard link is removed the file is removed. With this technique we can create snapshots of a directory as it was on a given date while the space occupied on disk is similar to an incremental copy, since between one date and another only the files that have changed are stored. |
+  
 ### Related to permissions and users
 
 
